@@ -1,5 +1,5 @@
 pipeline {
-  agent ecs{
+  agent ecs {
     inheritFrom 'linux-java'
   }
   stages {
