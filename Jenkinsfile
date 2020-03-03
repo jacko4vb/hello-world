@@ -4,9 +4,7 @@ pipeline {
   stages {
     stage('build') {
       agent {
-        ecs {
-             label 'linux-java'
-        }
+        ecs
       }
       steps {
         sh 'echo \'hello world\''
