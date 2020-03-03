@@ -3,7 +3,10 @@ pipeline {
   
   stages {
     stage('build') {
-      agent ecs
+      agent {
+        ecs{
+        }
+      }
       steps {
         sh 'echo \'hello world\''
       }
